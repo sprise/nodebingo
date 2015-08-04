@@ -12,8 +12,8 @@ A small NodeJS powered bingo game where squares are filled using popular NPM mod
 
 **Screenshot**
 
-![alt text][logo]
-[logo]: https://github/sprise/nodebingo/screenshot.jpg "Screenshot"
+![logo]
+[logo]: https://raw.githubusercontent.com/sprise/nodebingo/master/screenshot.jpg "Screenshot"
 
 ###How to Use###
 
