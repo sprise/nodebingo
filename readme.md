@@ -13,7 +13,7 @@ A small NodeJS powered bingo game where squares are filled using popular NPM mod
 **Screenshot**
 
 ![alt text][logo]
-[logo]: http://localhost/nodebingo/screenshot.jpg "Screenshot"
+[logo]: https://github/sprise/nodebingo/screenshot.jpg "Screenshot"
 
 ###How to Use###
 
