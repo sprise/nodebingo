@@ -1,0 +1,17 @@
+{
+  "name": "nodebingo",
+  "version": "1.0.0",
+  "description": "A simple bingo card generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Aaaand it broke.\" && exit 1"
+  },
+  "author": "sprise",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^8.8.0",
+    "mustache": "^2.1.2",
+    "q": "^1.4.1",
+    "redis": "^0.12.1"
+  }
+}

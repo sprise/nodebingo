@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{site_description}}">
+	
+	<title>{{site_title}} | {{site_description}}</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">	
+			{{#header}}
+				{{{header}}}
+			{{/header}}
+			
+			{{^header}}
+				<div class="col-sm-6 navbar-left">
+					<a href="#" class="navbar-brand">{{site_title}}</a>
+				</div>
+				
+				<div class="col-sm-6 navbar-right">
+					<p><strong>{{num_items}}</strong> possible squares.</p>
+				</div>
+			{{/header}}
+		</div>
+	</nav>
+	
+	<div class="container-fluid">
+		
+		<aside id="left-sidebar" class="col-md-2">
+			<div class="panel panel-default">
+				<div class="panel-body" id="left-sidebar">
+					{{#left_sidebar}}
+						{{{left_sidebar}}}
+					{{/left_sidebar}}
+					
+					{{^left_sidebar}}
+						<h3>How to Play</h3>
+						<ol>
+							<li>Print or open a unique game card for each player</li>
+							<li>Press "New Bingo Call" button to receive a new <em>Bingo Call</em></li>
+							<li>Mark or click each <em>Bingo Call</em> square if it appears on your card</li>
+							<li>First person with five marked in a row wins</li>
+						</ol>		
+					{{/left_sidebar}}
+				</div>
+			</div>
+			
+		</aside>
+		
+		<section id="main-container" class="col-md-8">
+			<h2>Your Card <a href="#" id="print-card" class="js-only btn btn-success">Print Your Card</a></h2>
+			{{{bingo_card}}}
+			
+			<hr class="clear" />
+			
+		</section> <!-- #main-container -->
+		
+		<aside id="right-sidebar" class="col-md-2">
+			{{#right_sidebar}}
+				{{{right_sidebar}}}
+			{{/right_sidebar}}
+			
+			{{^right_sidebar}}				
+				<div id="play-game">
+					<h2>Play Game</h2>
+					<a id="new-call" class="btn btn-primary">New Bingo Call</a>
+					<div id="bingo-calls"></div>
+				</div><!--/play-game-->
+			{{/right_sidebar}}
+		</aside>
+		
+	</div><!--/container-fluid-->
+	
+	<hr />
+	
+	<footer class="container-fluid">
+		{{#footer}}
+			{{{footer}}}
+		{{/footer}}
+		
+		{{^footer}}
+			<p class="center"><a href="https://github.com/sprise/nodebingo">github: sprise/nodebingo</a></p>
+		{{/footer}}
+	</footer>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

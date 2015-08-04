@@ -1,0 +1,56 @@
+/* MAIN STYLES */
+
+/* General */
+.js-only {display: none;}
+.hide {display: none;}
+.center {text-align: center; margin-left: auto; margin-right: auto;}
+.clear {clear: both;}
+
+
+/* Header */
+.navbar .navbar-brand .icon-bullhorn {float:left; margin-right: 11px; margin-top: -5px; color: #272B30; font-size: 30px; text-shadow: 0 0 0;}
+.navbar .navbar-right {text-align: right;}
+.navbar .navbar-right p {margin-top: 1.2rem;}
+
+
+/* Left Sidebar */
+#left-sidebar ol {padding-left: 1.5rem;}
+#left-sidebar ol li {margin-bottom: .5rem;}
+
+
+/* Card Style */
+.one-card {margin-left: 0; padding-left: 0;}
+.one-card li {border: 1px solid #ccc; min-height: 8rem; margin-left: 0; list-style-type: none; padding: .7rem; width:20%; float: left; overflow-x: hidden;}   
+.one-card li.clicked {background: #aaa;}
+.one-card li.col-1 {clear: left;}
+.one-card .square-name {min-height: 30px; padding: 3px 0; margin-top: 0; font-size: 1.5rem; margin-bottom: 0; font-weight: bold; position: relative;}
+.one-card .square-desc {font-size: 1.3rem; line-height: 1.4rem;}
+.one-card li.free-space {text-align: center; font-size: 2rem; color: #666;}
+
+
+/* Right Sidebar */
+#bingo-calls {height: 20rem; overflow: auto; padding-top: 1rem;}
+#bingo-calls .newest.single {color: red;}
+#bingo-calls .single {margin: 2px 0; color: #000;}
+
+
+/* RESPONSIVE */
+@media(max-width: 320px){
+	.one-card li {padding: 2px;}
+	.one-card li .square-name {font-size: 1rem}
+	.one-card li .square-desc {font-size: 1rem}
+}
+
+
+/* PRINT STYLES */
+
+@media print {
+	footer, #left-sidebar, hr, .info-link, #right-sidebar, #print-card, #play-game {display: none;}
+	.container-fluid {padding: 0; margin: 0; }
+	#main-container {width: 100%; padding: 0;}
+	
+	.one-card li {border: 1px solid #666; background: #fff; color: #000; min-height: auto; max-height: 130px;}
+	.one-card h5 {font-size: 12px;}
+	.one-card .detail-wrap {font-size: 10px;}
+}
+
